@@ -28,3 +28,4 @@
 /Users/francescocaputo/Desktop/FS2023/CorsoFS2023/Back-End/S5 MVC/ESERCIZIOL2/obj/Debug/net8.0/ESERCIZIOL2.pdb
 /Users/francescocaputo/Desktop/FS2023/CorsoFS2023/Back-End/S5 MVC/ESERCIZIOL2/obj/Debug/net8.0/ESERCIZIOL2.genruntimeconfig.cache
 /Users/francescocaputo/Desktop/FS2023/CorsoFS2023/Back-End/S5 MVC/ESERCIZIOL2/obj/Debug/net8.0/ref/ESERCIZIOL2.dll
+/Users/francescocaputo/Desktop/FS2023/CorsoFS2023/Back-End/S5 MVC/ESERCIZIOL2/obj/Debug/net8.0/ESERCIZIOL2.sourcelink.json
