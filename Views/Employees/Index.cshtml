@@ -19,17 +19,30 @@
             <th scope="col">Mansione</th>
         </tr>
     </thead>
-    <tbody>
-        <tr>
-            <th scope="row"></th>
-            <td>Francesco</td>
-            <td>Caputo</td>
-            <td>Via Boh</td>
-            <td>CPTskdjndqwa</td>
-            <td>no</td>
-            <td>no</td>
-            <td>NULLLLLA</td>
-
-        </tr>
-    </tbody>
-</table>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Cognome</th>
+                <th scope="col">Indirizzo</th>
+                <th scope="col">Coniugato</th>
+                <th scope="col">Figli a carico</th>
+                <th scope="col">Mansione</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var employees in Model)
+            {
+                <tr>
+                    <td>@employees.Id</td>
+                    <td>@employees.Nome</td>
+                    <td>@employees.Cognome</td>
+                    <td>@employees.Indirizzo</td>
+                    <td>@(employees.Coniugato ? "Sì" : "No")</td>
+                    <td>@employees.NumeroFigli</td>
+                    <td>@employees.Mansione</td>
+                </tr>
+            }
+        </tbody>
+    </table>

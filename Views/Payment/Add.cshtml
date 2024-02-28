@@ -1,29 +1,26 @@
+@model ESERCIZIOL2.Models.Payment
+
 @{
-    ViewData["Title"] = "Pagamenti";
+    ViewData["Title"] = "Aggiungi Pagamenti";
+    var employees = ESERCIZIOL2.Models.StaticDb.GetAll();
 }
 
-<div class="container mt-5">
-    <h1>Aggiungi pagamento</h1>
-    <form action="/submit" method="post">
-        <div class="form-group">
-            <label for="iddipendente">ID Dipendente:</label>
-            <input type="text" class="form-control" id="iddipendente" name="iddipendente">
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <h2 class="mt-5 mb-4">Aggiungi pagamento</h2>
+            <form asp-controller="Payment" asp-action="Add" method="post">
+                <div class="form-group">
+                    <label for="amount">Totale:</label>
+                    <input type="text" class="form-control" id="amount" placeholder="Enter amount">
+                </div>
+                <div class="form-group">
+                    <label for="period">Periodo:</label>
+                    <input type="text" class="form-control" id="periodoPagamento" placeholder="Aggiungi Mese">
+                </div>
+
+                <button type="submit" class="btn btn-primary mt-3">Aggiungi!</button>
+            </form>
         </div>
-        <div class="form-group">
-            <label for="periodo">Periodo pagamento:</label>
-            <input type="text" class="form-control" id="periodo" name="periodo">
-        </div>
-        <div class="form-group">
-            <label for="totale">Totale:</label>
-            <input type="text" class="form-control" id="totale" name="totale">
-        </div>
-        <div class="form-group">
-            <label for="stipendio_acconto">Stipendio/Acconto:</label>
-            <select id="inputConiugato" class="form-control">
-                <option value="1">Stipendio</option>
-                <option value="0">Acconto</option>
-            </select>
-        </div>
-        <button type="submit" class="btn btn-primary">Invia</button>
-    </form>
+    </div>
 </div>
